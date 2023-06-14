@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #4476d4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.panel {
+  background-color: #e9e3e3;
+  width: 1300px;
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-color: black;
+}
+
+.panel .menuLateral {
+  background-color: white;
+  width: 50px;
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.panel .usuario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.panel .usuario .crud {
+  padding: 15px;
+  background-color: #e9e3e3;
+  text-align: center;
+  width: 1200px;
+  height: 185px;
+}
+
+.panel .usuario .crud input {
+  line-height: 15px;
+  border-radius: 10px;
+  border-color: #4476d4;
+  font-size: 15px;
+  padding: 5px;
+  height: 20px;
+  text-align: center;
+}
+
+.panel .usuario .crud input:hover {
+  border-color: #b1c3e5;
+}
+
+.panel .usuario .crud .acciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+  padding: 10px;
+}
+
+.panel .usuario .crud .acciones .crear a, .panel .usuario .crud .acciones .leer a, .panel .usuario .crud .acciones .actualizar a, .panel .usuario .crud .acciones .eliminar a {
+  color: black;
+}
+
+.panel .usuario .inventario {
+  background-color: #e9e3e3;
+  text-align: center;
+  width: 1200px;
+  height: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  padding: 30px;
+}
+
+.panel .usuario .inventario table {
+  text-align: center;
+  background-color: whitesmoke;
+}
+/*# sourceMappingURL=PanelDeControl.css.map */

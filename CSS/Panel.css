@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #4476d4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.panel {
+  background-color: #e9e3e3;
+  width: 1300px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-color: black;
+}
+
+.panel .menuLateral {
+  background-color: white;
+  width: 50px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.panel .usuario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.panel .usuario .crud {
+  padding: 15px;
+  background-color: #e9e3e3;
+  text-align: center;
+  width: 1200px;
+  height: auto;
+}
+
+.panel .usuario .crud input {
+  line-height: 15px;
+  border-radius: 10px;
+  border-color: #4476d4;
+  font-size: 15px;
+  padding: 5px;
+  height: 20px;
+  text-align: center;
+}
+
+.panel .usuario .crud input:hover {
+  border-color: #b1c3e5;
+}
+
+.panel .usuario .crud .acciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+  padding: 10px;
+}
+
+.panel .usuario .crud .acciones .crear a, .panel .usuario .crud .acciones .actualizar a, .panel .usuario .crud .acciones .eliminar a, .panel .usuario .crud .acciones .usuarios a {
+  color: black;
+}
+
+.panel .usuario .inventario {
+  background-color: #e9e3e3;
+  text-align: center;
+  width: 1200px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  padding: 30px;
+}
+
+.panel .usuario .inventario form {
+  text-align: center;
+  font-size: 20px;
+}
+
+.panel .usuario .inventario form input {
+  border-radius: 20px;
+  border-color: black;
+  font-size: 20px;
+  padding: 5px;
+  height: 35px;
+  width: 450px;
+  text-align: center;
+}
+
+.panel .usuario .inventario form input:hover {
+  border-color: #5f6063;
+}
+
+.panel .usuario .inventario form button {
+  border-radius: 20px;
+  font-size: 20px;
+  height: 35px;
+  width: 150px;
+  background-color: black;
+  color: white;
+}
+
+.panel .usuario .inventario form button:hover {
+  background-color: #363131;
+}
+
+.panel .usuario .inventario table {
+  width: 1250px;
+  text-align: center;
+}
+
+.panel .usuario .inventario table button {
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 5px;
+  height: 35px;
+  width: 150px;
+  background-color: black;
+  color: white;
+}
+
+.panel .usuario .inventario table button:hover {
+  background-color: #363131;
+}
+/*# sourceMappingURL=Panel.css.map */

@@ -1,0 +1,324 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body img {
+  position: absolute;
+  width: 100%;
+  height: 750px;
+  z-index: -1;
+}
+
+.departamentos {
+  display: block;
+  background-color: black transparent;
+  width: 1300px;
+  height: 500px;
+}
+
+.departamentos .cerrarSesion {
+  float: left;
+  font-size: 16px;
+  text-decoration: none;
+  color: #4476d4;
+}
+
+.departamentos .cerrarSesion:hover {
+  font-size: 18px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  color: #5f8ad8;
+}
+
+.departamentos .roles {
+  float: right;
+  font-size: 16px;
+  text-decoration: none;
+  color: #4476d4;
+}
+
+.departamentos .roles:hover {
+  font-size: 18px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  color: #5f8ad8;
+}
+
+.departamentos .titulo {
+  background-color: black transparent;
+  padding: 30px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.departamentos .menu {
+  background-color: black transparent;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.departamentos .menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.departamentos .menu .Area_Covid, .departamentos .menu .Laboratorio, .departamentos .menu .Limpieza, .departamentos .menu .Oficina, .departamentos .menu .Urgencias {
+  background-color: black transparent;
+  padding: 45px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+.departamentos .menu .Area_Covid:hover, .departamentos .menu .Laboratorio:hover, .departamentos .menu .Limpieza:hover, .departamentos .menu .Oficina:hover, .departamentos .menu .Urgencias:hover {
+  content: "";
+  width: 250px;
+  height: 150px;
+  background-color: #3f70cc;
+  color: white;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.departamentos .menu .Area_Covid:hover a, .departamentos .menu .Laboratorio:hover a, .departamentos .menu .Limpieza:hover a, .departamentos .menu .Oficina:hover a, .departamentos .menu .Urgencias:hover a {
+  color: white;
+}
+
+.departamentos .menu .Area_Covid button, .departamentos .menu .Laboratorio button, .departamentos .menu .Limpieza button, .departamentos .menu .Oficina button, .departamentos .menu .Urgencias button {
+  background-color: black transparent;
+}
+
+.departamentos .menu .Area_Covid .texto-animado, .departamentos .menu .Laboratorio .texto-animado, .departamentos .menu .Limpieza .texto-animado, .departamentos .menu .Oficina .texto-animado, .departamentos .menu .Urgencias .texto-animado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.departamentos .menu .Area_Covid .texto-animado > div, .departamentos .menu .Laboratorio .texto-animado > div, .departamentos .menu .Limpieza .texto-animado > div, .departamentos .menu .Oficina .texto-animado > div, .departamentos .menu .Urgencias .texto-animado > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.departamentos .menu .Area_Covid .texto-animado > div.animacion, .departamentos .menu .Laboratorio .texto-animado > div.animacion, .departamentos .menu .Limpieza .texto-animado > div.animacion, .departamentos .menu .Oficina .texto-animado > div.animacion, .departamentos .menu .Urgencias .texto-animado > div.animacion {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+.departamentos .menu .Area_Covid .texto-animado > div span, .departamentos .menu .Laboratorio .texto-animado > div span, .departamentos .menu .Limpieza .texto-animado > div span, .departamentos .menu .Oficina .texto-animado > div span, .departamentos .menu .Urgencias .texto-animado > div span {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 100px;
+}
+
+.departamentos .menu .Area_Covid .texto-animado .segunda-linea, .departamentos .menu .Laboratorio .texto-animado .segunda-linea, .departamentos .menu .Limpieza .texto-animado .segunda-linea, .departamentos .menu .Oficina .texto-animado .segunda-linea, .departamentos .menu .Urgencias .texto-animado .segunda-linea {
+  position: absolute;
+  top: 100px;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+}
+
+.overlay .active {
+  visibility: visible;
+}
+
+.popup {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 1.25em;
+  background: whitesmoke;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  width: 450px;
+  max-width: 28.125em;
+  height: 400px;
+  max-height: 25em;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  opacity: 0;
+}
+
+.popup .btn-cerrar-popup {
+  font-size: 1em;
+  display: block;
+  text-align: right;
+  color: #000;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.popup .btn-cerrar-popup:hover {
+  color: red;
+}
+
+.popup h2 {
+  font-size: 1em;
+  font-weight: 500;
+  opacity: 0;
+}
+
+.popup form {
+  padding: 30px;
+  width: 400px;
+  max-width: 25em;
+  height: 325px;
+  max-height: 20.3125em;
+  opacity: 0;
+}
+
+.popup form label {
+  font-size: 1.875em;
+  font-weight: 500;
+}
+
+.popup form input {
+  line-height: 15px;
+  border-radius: 10px;
+  border-color: #4476d4;
+  font-size: 20px;
+  padding: 5px;
+  height: 25px;
+  text-align: center;
+}
+
+.popup form input:hover {
+  border-color: #b1c3e5;
+}
+
+.popup form .btn-submit {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 5px;
+  height: 35px;
+  width: 150px;
+  background-color: #4476d4;
+  color: white;
+}
+
+.popup form .btn-submit:hover {
+  background-color: #5f8ad8;
+}
+
+.popup.active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.popup.active h2 {
+  -webkit-animation: entradaTitulo 2s ease .5s forwards;
+          animation: entradaTitulo 2s ease .5s forwards;
+}
+
+.popup {
+  -webkit-animation: entradaForm 1s ease 2s forwards;
+          animation: entradaForm 1s ease 2s forwards;
+}
+
+@-webkit-keyframes entradaTitulo {
+  from {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes entradaTitulo {
+  from {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes entradaForm {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes entradaForm {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=Areas.css.map */
